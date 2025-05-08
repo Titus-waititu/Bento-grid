@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+    display: flex;
+    margin: 2rem 2rem;
+    gap: 10px;
+
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+   min-width: 20%;
+ 
+ 
+    
+}
+
+.create-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(39, 67%, 92%);
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.create-content h2 {
+    font-weight: 800;
+}
+
+.create-content span {
+    color: blueviolet;
+    font-weight: 800;
+}
+
+.create-content img {
+    width: 50%;
+}
+
+.content-ai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: hsl(40, 90%, 52%);
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+}
+.content-ai h2 {
+    font-weight: 800;
+}
+
+.content-ai span {
+    color: blueviolet;
+    font-weight: 800;
+}
+
+.content-ai img {
+    width: 100%;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+    width: 100%;
+}
+
+.social-media {
+    background-color: hsl(256, 67%, 59%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 20px;
+    justify-items: center;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 5px;
+}
+.social-media img{
+    width: 50%;
+}
+
+.manage-accounts {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: 0px 0px 10px hsl(254, 14%, 82%);
+    background-color: white;
+    padding: 10px;
+    max-width: 25%;
+    border-radius: 5px;
+}
+
+.posting-schedule {
+    background-color: hsl(40, 90%, 52%);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    gap: 10px;
+    max-width: 25%;
+    border-radius: 5px;
+    grid-row-end: 3;
+    padding: 10px;
+}
+
+.schedule-media {
+    background-color: hsl(256, 71%, 81%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-left: 10px;
+    padding-left: 10px;
+    max-width: 30%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.audience-growth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 10px hsl(254, 14%, 82%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-followers {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-shadow: 0px 0px 10pxhsl(256, 67%, 59%);
+    background-color: hsl(256, 67%, 59%);
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
