@@ -13,7 +13,7 @@ body {
     margin: 2rem 2rem;
     gap: 10px;
     width: 100%;
-
+    margin-left: 8rem;
 }
 img{
     width: 50%;
@@ -22,7 +22,7 @@ img{
 .aside {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 18px;
     gap: 10px;
     width: 30%;
    /* min-width: 20%; */
@@ -33,11 +33,11 @@ img{
 
 .create-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center;  */
     flex-direction: column;
     background-color: hsl(39, 67%, 92%);
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     height: 100%;
     width: 100%;
@@ -46,21 +46,23 @@ img{
 
 .create-content h2 {
     font-weight: 800;
+    font-size: 2rem;
 }
 
 .create-content span {
     color: blueviolet;
     font-weight: 800;
+    font-size: 1.8rem;
 }
 
 .create-content img {
-    width: 50%;
+    width: 60%;
 }
 
 .content-ai {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -72,6 +74,7 @@ img{
 }
 .content-ai h2 {
     font-weight: 800;
+
 }
 
 .content-ai span {
@@ -80,7 +83,7 @@ img{
 }
 
 .content-ai img {
-    width: 70%;
+    width: 100%;
 }
 .main-content {
     display: flex;
@@ -105,6 +108,11 @@ img{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 20px;
     height: 100%;
     /* justify-items: center; */
@@ -144,6 +152,11 @@ img{
     border-radius: 5px;
     grid-row-end: 3;
     padding: 10px;
+    justify-items: center;
+}
+.posting-schedule img{
+    width: 70%;
+    margin-top: 10px;
 }
 
 .schedule-media {
@@ -152,15 +165,17 @@ img{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    padding-left: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
     width: 100%;
     padding-bottom: 10px;
     justify-items: center;
     border-radius: 5px;
 }
 .schedule-media img{
-    width: 70%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .bottom-content {
     display: flex;
@@ -177,10 +192,11 @@ img{
     box-shadow: 0px 0px 10px hsl(254, 14%, 82%);
     background-color: white;
     padding: 20px;
+    max-width: 190px;
     border-radius: 5px;
 }
 .audience-growth img{
-    width: 70%;
+    width: 50%;
 }
 
 .grow-followers {
@@ -193,8 +209,68 @@ img{
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    max-width: 40%;
+    max-width: 51%;
 }
 .grow-followers img{
     width: 50%;
+}
+.grow-followers h2{
+    color: white;
+    font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .aside {
+        width: 100%;
+    }
+    .main-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .media {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        width: 90%;
+        gap: 20px;
+        padding: 0;
+
+    }
+    .media img {
+        width: 100%;
+    }
+    .schedule-media{
+        padding-right: 20px;
+    }
+    .bottom-content {
+        width: 100%;
+        margin: 0 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .audience-growth{
+        max-width: 100%;
+        width: 90%;
+    }
+    .grow-followers{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .grow-followers img{
+        width: 30%;
+    }
+    
+    
 }
