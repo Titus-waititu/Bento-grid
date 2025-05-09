@@ -196,7 +196,18 @@ img{
     border-radius: 5px;
 }
 .audience-growth img{
-    width: 50%;
+    margin-top: 1rem;
+    width: 100%;
+}
+.audience-growth p{
+    font-weight: 800;
+    font-size: 1rem;
+    /* color: hsl(256, 67%, 59%); */
+}
+.audience-growth h2{
+    font-weight: 800;
+    font-size: 2rem;
+    /* color: hsl(256, 67%, 59%); */
 }
 
 .grow-followers {
